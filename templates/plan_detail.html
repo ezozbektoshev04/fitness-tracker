@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}{{ plan.title }}{% endblock %}
+{% block content %}
+<div class="card p-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>{{ plan.title }}</h2>
+        <div>
+            <a href="{% url 'plan_update' plan.pk %}" class="btn btn-warning me-2">Edit</a>
+            <a href="{% url 'plan_delete' plan.pk %}" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+    <p class="text-muted">{{ plan.description }}</p>
+    <hr>
+    <h5>Exercises in this plan:</h5>
+    <div class="row mt-3">
+        {% for exercise in plan.exercises.all %}
+            <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                    <span class="badge bg-primary mb-2" style="width: fit-content;">{{ exercise.category }}</span>
+                    <h6>{{ exercise.name }}</h6>
+                    <small class="text-muted">{{ exercise.duration_minutes }} mins • {{ exercise.calories_burned }} kcal</small>
+                </div>
+            </div>
+        {% empty %}
+            <p class="text-muted">No exercises added to this plan.</p>
+        {% endfor %}
+    </div>
+</div>
+<a href="{% url 'plan_list' %}" class="btn btn-secondary mt-3">Back to Plans</a>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Exercises{% endblock %}
+{% block content %}
+<h2 class="mb-4">Exercise Library</h2>
+<div class="row">
+    {% for exercise in exercises %}
+        <div class="col-md-4 mb-4">
+            <div class="card p-3 h-100">
+                <span class="badge bg-primary mb-2" style="width: fit-content;">{{ exercise.category }}</span>
+                <h5>{{ exercise.name }}</h5>
+                <p class="text-muted small">{{ exercise.description }}</p>
+                <div class="mt-auto">
+                    <span class="me-3"><i class="fas fa-clock me-1"></i>{{ exercise.duration_minutes }} mins</span>
+                    <span><i class="fas fa-fire me-1"></i>{{ exercise.calories_burned }} kcal</span>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <p class="text-muted">No exercises yet. Add some from the admin panel!</p>
+    {% endfor %}
+</div>
+{% endblock %}

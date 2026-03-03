@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Log Workout{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card p-4">
+            <h2 class="mb-4">Log a Workout</h2>
+            <form method="POST">
+                {% csrf_token %}
+                {% for field in form %}
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">{{ field.label }}</label>
+                        {{ field }}
+                        {% for error in field.errors %}
+                            <div class="text-danger small">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+                <button type="submit" class="btn btn-primary w-100">Log Workout</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
