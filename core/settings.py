@@ -109,4 +109,6 @@ SECURE_BROWSER_XSS_FILTER = True
 CSRF_TRUSTED_ORIGINS = [
     'https://16599.wiut911.uz',
     'http://16599.wiut911.uz',
+    'https://128.251.49.42',
+    'http://128.251.49.42'
 ]
