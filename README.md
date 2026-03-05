@@ -103,6 +103,12 @@ Create a `.env` file in the root directory with these variables:
 ### Workout Plans
 ![img.png](screenshots/workout.png)
 
+### Register Page
+![img.png](screenshots/img_2.png)
+
+### Adding Workout Plans
+![img.png](screenshots/img_1.png)
+
 ## 👤 Test Credentials
 
 - **URL:** https://16599.wiut911.uz/ 
