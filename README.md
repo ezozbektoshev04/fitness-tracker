@@ -95,13 +95,13 @@ Create a `.env` file in the root directory with these variables:
 ## 📸 Screenshots
 
 ### Home Page
-![img.png](media/img.png)
+![img.png](screenshots/img.png)
 
 ### Dashboard
-![img.png](media/dashboard.png)
+![img.png](screenshots/dashboard.png)
 
 ### Workout Plans
-![img.png](media/workout.png)
+![img.png](screenshots/workout.png)
 
 ## 👤 Test Credentials
 
