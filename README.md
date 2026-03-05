@@ -20,7 +20,7 @@ A full-stack web application for tracking workouts, managing fitness plans, and 
 - **Containerization:** Docker, Docker Compose
 - **Frontend:** Bootstrap 5, HTML5, CSS3
 - **CI/CD:** GitHub Actions
-- **Cloud:** Eskiz Cloud Server
+- **Cloud:** Azure VM Server
 
 ## 🚀 Local Setup Instructions
 
