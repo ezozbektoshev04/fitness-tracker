@@ -4,3 +4,5 @@ gunicorn
 python-dotenv
 pillow
 whitenoise
+pytest-django
+flake8
