@@ -97,8 +97,9 @@ jobs:
             cd ~/fitness-tracker
             git pull origin main
             docker-compose pull
+            docker-compose stop web
             docker-compose up -d --no-deps --build web
             docker-compose exec -T web python manage.py migrate
             docker-compose exec -T web python manage.py collectstatic --noinput
             docker-compose restart nginx
-            echo "Deployment completed successfully!"
+            echo "✅ Deployment completed successfully!"
