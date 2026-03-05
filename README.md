@@ -105,9 +105,9 @@ Create a `.env` file in the root directory with these variables:
 
 ## 👤 Test Credentials
 
-- **URL:** https://yourdomain.uz
-- **Username:** testuser
-- **Password:** testpass123
+- **URL:** https://16599.wiut911.uz/ 
+- **Username:** ezozbek
+- **Password:** 12345
 
 ## 📄 License
 MIT License
